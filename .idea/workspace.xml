@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Klassendiagram finaly">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Beutel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Elf.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Held.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
+    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Klassendiagram und Kampfsystem">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Gegner.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Scherge.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Beutel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Beutel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Held.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +51,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/kotlin/Fahrzeuge" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/Fahrzeuge" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="Helden" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -95,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683201483024</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Klassen teilweise implementiert">
+      <created>1683207682542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683207682543</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Klassendiagram und Kampfsystem">
+      <created>1683285334265</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683285334265</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +136,8 @@
     <MESSAGE value="Klassendiagram" />
     <MESSAGE value="Klassendiagram refactor" />
     <MESSAGE value="Klassendiagram finaly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klassendiagram finaly" />
+    <MESSAGE value="Klassen teilweise implementiert" />
+    <MESSAGE value="Klassendiagram und Kampfsystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klassendiagram und Kampfsystem" />
   </component>
 </project>
