@@ -1,6 +1,10 @@
 package Helden
 
-class Krieger {
+class Krieger: Held(name = "Hroarr",
+                    hp = 100,
+                    alive = true,
+                    zugGemacht = true,
+                    vergifted = true) {
 
     fun angriff(): Int {
         return 20

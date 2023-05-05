@@ -1,6 +1,10 @@
 package Helden
 
-class Elf () {
+class Elf: Held(name = "Paeris",
+                hp = 100,
+                alive = true,
+                vergifted = false,
+                zugGemacht = false) {
 
     //pfeilangriff
     fun angriff(): Int {

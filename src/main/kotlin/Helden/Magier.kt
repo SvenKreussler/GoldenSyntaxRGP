@@ -1,6 +1,10 @@
 package Helden
 
-class Magier () {
+class Magier: Held(name = "Faraji",
+                    hp = 100,
+                    alive = true,
+                    zugGemacht = true,
+                    vergifted = false) {
 
     // heilt alle aus Party mit 20?
     fun heilen(): Int {

@@ -2,7 +2,7 @@ package Gegner
 
 
 // wird aufgerufen von Klasse Drache und kann nur einmal pro Kampf aufgerufen werden
-class Scherge: Gegner(name = "Snaag", hp = 50) {
+class Scherge: Gegner(name = "Snaag", hp = 50, alive = true, zugGemacht = true,vergifted = false) {
 
     //Generische Attacke
     fun attacke(): Int {

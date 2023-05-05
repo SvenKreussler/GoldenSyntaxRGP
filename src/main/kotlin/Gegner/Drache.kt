@@ -1,6 +1,10 @@
 package Gegner
 
-class Drache:Gegner("Godzilla", 200) {
+class Drache:Gegner("Godzilla",
+                    200,
+                    alive = true,
+                    zugGemacht = false,
+                    vergifted = false) {
 
     fun feueratem(): Int {
         // feuerangriff fügt 20 Schaden für Party zu

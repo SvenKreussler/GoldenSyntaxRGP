@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Klassendiagram und Kampfsystem">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Gegner.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Scherge.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
+    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Klassen implementiert">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/helper/kampf.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Beutel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Beutel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Held.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Golden Syntax RPG Flowchart und Kampfsystem.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bilder/Golden Syntax RPG Flowchart und Kampfsystem.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Groß (IMG_0014).jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bilder/Groß (IMG_0014).jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Groß (IMG_0015).jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bilder/Groß (IMG_0015).jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Groß (IMG_0016).jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bilder/Groß (IMG_0016).jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Groß (IMG_0018).jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Bilder/Groß (IMG_0018).jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Gegner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Gegner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Scherge.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Scherge.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +57,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/Bilder" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/Fahrzeuge" />
     </key>
@@ -116,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683285334265</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Klassen implementiert">
+      <created>1683287823049</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683287823049</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +152,7 @@
     <MESSAGE value="Klassendiagram finaly" />
     <MESSAGE value="Klassen teilweise implementiert" />
     <MESSAGE value="Klassendiagram und Kampfsystem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klassendiagram und Kampfsystem" />
+    <MESSAGE value="Klassen implementiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klassen implementiert" />
   </component>
 </project>
