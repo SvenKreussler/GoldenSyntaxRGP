@@ -11,9 +11,9 @@ class Scherge(): Gegner(name = "Snaag",
 
     var gespawnt = false
 
-    var randomAuswahl = listOf(attacke(), krallen(), feuball(),gift())
 
     fun returnRandomAuswahl(){
+    var randomAuswahl = listOf(attacke(), krallen(), feuball(),gift())
         when (randomAuswahl.random()){
             attacke() -> attacke()
             krallen() -> krallen()

@@ -6,15 +6,14 @@ class Drache:Gegner("Godzilla",
                     zugGemacht = false,
                     vergifted = false) {
 
-    var randomAuswahl = listOf(feueratem(),schwanzflosse(), verfluchen(),beschwoeren())
-
-
     fun returnRandomAuswahl(){
-        when (randomAuswahl.random()){
-            feueratem() -> feueratem()
-            schwanzflosse() -> schwanzflosse()
-            verfluchen() -> verfluchen()
-            beschwoeren() -> beschwoeren()
+        var randomAuswahl = listOf(1,2,3,4).random()
+        when (randomAuswahl){
+            1 -> feueratem()
+            2 -> schwanzflosse()
+            3 -> verfluchen()
+            4 -> beschwoeren()
+            else -> println("ungültige Auswahl")
         }
 
     }
@@ -41,6 +40,6 @@ class Drache:Gegner("Godzilla",
         println("Ein unterboss wird gerufen!")
         var scherge = Scherge()
         scherge.gespawnt = true
-        return
+
     }
 }

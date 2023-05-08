@@ -8,10 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Scherge.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Scherge.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
     </list>
@@ -130,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683295034524</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Kampfsystem weiter implementiert">
+      <created>1683539553023</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683539553023</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,9 +165,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Kampf.kt</url>
-          <line>44</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/util.kt</url>
+          <line>32</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

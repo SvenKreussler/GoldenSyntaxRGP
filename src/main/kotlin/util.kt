@@ -9,7 +9,7 @@ fun main() {
     var drache = Drache()
     println(drache.hp)*/
 
-    fun dasIstEinTest() {
+/*    fun dasIstEinTest() {
         println("testtesttest")
     }
     println("Text")
@@ -22,5 +22,55 @@ fun main() {
         else -> {
             println("Auswahl ungültig!")
         }
-    }
+    }*/
+
+/*    var elf = Elf()
+    var krieger = Krieger()
+    var magier = Magier()
+
+    var helden = mutableListOf(magier,krieger,elf)
+    for (held in helden) {
+        print(held)
+    }*/
+
 }
+
+
+//
+
+/*
+for (i in helden) {
+    println("Bitte Ihren Zug ausführen!")
+
+    //Druckt die Aktionen aus, die die Klasse Krieger hat
+    krieger.druckeAktionenAus()
+    //Lies die Auswahl vom Anwender
+    var ausWahlFuerKrieger = readln().toInt()
+    //Gibt Schadenswert beziehungsweise Boolean wieder
+    krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
+
+    //Druckt die Aktionen aus, die die Klasse Elf hat
+    elf.druckeAktionenAus()
+    //Lies die Auswahl vom Anwender
+    var ausWahlFuerElf = readln().toInt()
+    //Gibt Schadenswert beziehungsweise Boolean wieder
+    elf.returnAuswahl(anwenderwaehltAus = ausWahlFuerElf)
+
+    //Druckt die Aktionen aus, die die Klasse magier hat
+    magier.druckeAktionenAus()
+    //Lies die Auswahl vom Anwender
+    var ausWahlFuerMagier = readln().toInt()
+    //Gibt Schadenswert beziehungsweise Boolean wieder
+    magier.returnAuswahl(anwenderwaehltAus = ausWahlFuerMagier)
+
+
+}
+*/
+
+
+/*
+for (gegner in gegners) {
+    println("Gegner sind am Zug!")
+    drache.returnRandomAuswahl()
+
+}*/
