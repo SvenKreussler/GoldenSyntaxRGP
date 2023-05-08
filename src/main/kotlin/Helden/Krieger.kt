@@ -4,9 +4,31 @@ class Krieger: Held(name = "Hroarr",
                     hp = 100,
                     alive = true,
                     zugGemacht = true,
-                    vergifted = true) {
+                    vergifted = true,
+                    anwenderwaehltAus = 0) {
+
+    fun returnAuswahl(anwenderwaehltAus:Int) {
+    when (anwenderwaehltAus) {
+        1 -> angriff()
+        2 -> raserei()
+        3 -> schuetzen()
+        4 -> schrei()
+        else -> {
+            println("Auswahl ungültig!")
+        }
+    }
+    }
+
+
+    fun druckeAktionenAus() {
+        println("1) Angriff(Normaler Angriff mit 20 Schaden)")
+        println("2) Raserei(Attacke mit 40 Schaden an Gegner und 20% Schaden an sich selbst)")
+        println("3) Schuetzen(Schützt ein Party Mitglied für eine Runde und selbst nimmt zehn Schaden)")
+        println("4) Schrei(Schrei der zehn Schaden macht)")
+    }
 
     fun angriff(): Int {
+        //Normaler Angriff mit 20 Schaden
         return 20
     }
 
@@ -21,6 +43,7 @@ class Krieger: Held(name = "Hroarr",
     }
 
     fun schrei(): Int {
+        //Schreie der zehn Schaden macht
         return 10
     }
 }

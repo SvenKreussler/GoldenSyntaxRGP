@@ -4,25 +4,46 @@ class Elf: Held(name = "Paeris",
                 hp = 100,
                 alive = true,
                 vergifted = false,
-                zugGemacht = false) {
+                zugGemacht = false,
+                anwenderwaehltAus = 0) {
+
+    fun returnAuswahl(anwenderwaehltAus:Int) {
+        when (anwenderwaehltAus) {
+            1 -> angriff()
+            2 -> feuermauer()
+            3 -> giftpfeil()
+            4 -> mut()
+            else -> {
+                println("Auswahl ungültig!")
+            }
+        }
+    }
+
+    fun druckeAktionenAus() {
+        println("1) Pfeilangriff(Normaler Angriff mit 20 Schaden)")
+        println("2) Feuermauer(heldenklasse bekommt -10 Schaden für eine Runde)")
+        println("3) Giftpfeil(Zustandsveränderung für Gegner: -5 % Schaden Ausgabe für 4 Runden)")
+        println("4) Mut(Zustandsveraenderung, für 2 Runden je Party Mitglied +5% atk)")
+    }
 
     //pfeilangriff
     fun angriff(): Int {
+        //Physikalische Angriff, 20 Schaden
         return 20
     }
 
-    // heldenklasse bekommt -10 Schaden für eine Runde
     fun feuermauer(): Int {
+    // heldenklasse bekommt -10 Schaden für eine Runde
         return 90
     }
-    //Zustandsveränderung für Gegner: -5 % Schaden ausgabe für 4 Runden.
 
     fun giftpfeil(): Int {
+    //Zustandsveränderung für Gegner: -5 % Schaden ausgabe für 4 Runden.
         return 5
     }
 
-    //Zustandsveraenderung, für 2 Runden je Party Mitglied +5% atk
     fun mut(): Int {
+    //Zustandsveraenderung, für 2 Runden je Party Mitglied +5% atk
         return 5
     }
 }
