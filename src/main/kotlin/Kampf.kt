@@ -31,15 +31,17 @@ fun main() {
             } else println("Bitte Ihren Zug ausführen!")
 
             //Druckt die Aktionen aus, die die Klasse Krieger hat
-            krieger.druckeAktionenAus()
+            /*krieger.druckeAktionenAus()*/
             //Lies die Auswahl vom Anwender
             var ausWahlFuerKrieger = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
             krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
+            drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
+            println(drache.hp)
             krieger.zugGemacht = true
 
             //Druckt die Aktionen aus, die die Klasse Elf hat
-            elf.druckeAktionenAus()
+            /*elf.druckeAktionenAus()*/
             //Lies die Auswahl vom Anwender
             var ausWahlFuerElf = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
@@ -47,12 +49,13 @@ fun main() {
             elf.zugGemacht = true
 
             //Druckt die Aktionen aus, die die Klasse magier hat
-            magier.druckeAktionenAus()
+            /*magier.druckeAktionenAus()*/
             //Lies die Auswahl vom Anwender
             var ausWahlFuerMagier = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
             magier.returnAuswahl(anwenderwaehltAus = ausWahlFuerMagier)
             magier.zugGemacht = true
+
 
         } else println("SIEG!!11")
 

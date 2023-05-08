@@ -4,7 +4,7 @@ class Elf: Held(name = "Paeris",
                 hp = 100,
                 alive = true,
                 vergifted = false,
-                zugGemacht = false,
+                zugGemacht = true,
                 anwenderwaehltAus = 0) {
 
     fun returnAuswahl(anwenderwaehltAus:Int) {

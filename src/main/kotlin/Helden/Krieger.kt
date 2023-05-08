@@ -7,15 +7,13 @@ class Krieger: Held(name = "Hroarr",
                     vergifted = true,
                     anwenderwaehltAus = 0) {
 
-    fun returnAuswahl(anwenderwaehltAus:Int) {
-    when (anwenderwaehltAus) {
+    fun returnAuswahl(anwenderwaehltAus:Int):Int {
+    return when (anwenderwaehltAus) {
         1 -> angriff()
         2 -> raserei()
-        3 -> schuetzen()
-        4 -> schrei()
-        else -> {
-            println("Auswahl ungültig!")
-        }
+        3 -> schrei()
+        /*4 -> schuetzen()*/
+        else -> 0
     }
     }
 
