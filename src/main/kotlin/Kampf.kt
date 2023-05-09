@@ -14,8 +14,8 @@ fun main() {
     var gegners = mutableListOf(drache, scherge)
 
     while(drache.hp > 0) {
-        var target = listOf(elf,krieger,magier).random()
-        while(krieger.zugGemacht && elf.zugGemacht && magier.zugGemacht) {
+
+        /*while(krieger.zugGemacht && elf.zugGemacht && magier.zugGemacht) {
             //Druckt die Aktionen aus, die die Klasse Krieger hat
             krieger.druckeAktionenAus()
             //Lies die Auswahl vom Anwender
@@ -42,11 +42,20 @@ fun main() {
             drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
             println("Volltreffer! ${drache.name} hat noch ${drache.hp} HP!\n")
             magier.zugGemacht = false
-        }
+        }*/
+        while(drache.zugGemacht) {
+            var target = listOf(krieger,magier,elf).random()
+            var dmg = drache.schwanzflosse()
+            var targethp = target.hp - dmg
+            println("${target.name}\n hat noch $targethp HP!")
+            drache.zugGemacht = false
 
+        }
 
 
     }
 }
+
+
 
 

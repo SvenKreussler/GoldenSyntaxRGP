@@ -1,6 +1,12 @@
 package Helden
 
-class Krieger: Held(name = "Hroarr",
+class Krieger: Held(name = """ 
+ _   _                                      
+| | | |  _ __    ___     __ _   _ __   _ __ 
+| |_| | | '__|  / _ \   / _` | | '__| | '__|
+|  _  | | |    | (_) | | (_| | | |    | |   
+|_| |_| |_|     \___/   \__,_| |_|    |_|   
+""",
                     hp = 100,
                     alive = true,
                     zugGemacht = true,
@@ -19,14 +25,7 @@ class Krieger: Held(name = "Hroarr",
 
 
     fun druckeAktionenAus() {
-        println(""" 
-                 _   _                           
-                | | | |_ __ ___   __ _ _ __ _ __ 
-                | |_| | '__/ _ \ / _` | '__| '__|
-                |  _  | | | (_) | (_| | |  | |   
-                |_| |_|_|  \___/ \__,_|_|  |_|   
-                                            
-        """.trimIndent())
+
         println("1) Angriff(Normaler Angriff mit 20 Schaden)")
         println("2) Raserei(Attacke mit 40 Schaden an Gegner und 20% Schaden an sich selbst)")
         println("3) Schuetzen(Schützt ein Party Mitglied für eine Runde und selbst nimmt zehn Schaden)")

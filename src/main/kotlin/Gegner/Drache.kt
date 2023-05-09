@@ -1,22 +1,28 @@
 package Gegner
 
-class Drache:Gegner("Godzilla",
+class Drache:Gegner("""
+                 _     _ _ _       
+  __ _  ___   __| |___(_) | | __ _ 
+ / _` |/ _ \ / _` |_  / | | |/ _` |
+| (_| | (_) | (_| |/ /| | | | (_| |
+ \__, |\___/ \__,_/___|_|_|_|\__,_|
+ |___/                             """,
                     200,
                     alive = true,
-                    zugGemacht = false,
+                    zugGemacht = true,
                     vergifted = false) {
 
-/*    fun returnRandomAuswahl(){
-        var randomAuswahl = listOf(1,2,3,4).random()
+    fun returnRandomAuswahl(){
+        var randomAuswahl = listOf(1).random()
         when (randomAuswahl){
-            1 -> feueratem()
-            2 -> schwanzflosse()
+            1 -> schwanzflosse()
+/*            2 -> feueratem()
             3 -> verfluchen()
-            4 -> beschwoeren()
+            4 -> beschwoeren()*/
             else -> println("ungültige Auswahl")
         }
 
-    }*/
+    }
 /*    fun feueratem(helden:MutableList<String>){
         println("Feuerangriff: 20 Schaden für Party!")
         for (i in 1..3) {
@@ -28,7 +34,7 @@ class Drache:Gegner("Godzilla",
     }*/
 
     fun schwanzflosse(): Int {
-        println("Schwanzflosse: 20 Schaden für einen Helden!")
+        println("$name\n Schwanzflosse: 20 Schaden für einen Helden!")
         //Fügt 20 Schaden für ein Helden hinzu
         return 20
     }

@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="refactor of whole fightingsystem">
+    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="primitive implementation of fightingsystem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683631521605</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="primitive implementation of fightingsystem">
+      <created>1683634871223</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683634871223</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +192,7 @@
     <MESSAGE value="Still implementing fighting system" />
     <MESSAGE value="still implementing fightsystem #1" />
     <MESSAGE value="refactor of whole fightingsystem" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor of whole fightingsystem" />
+    <MESSAGE value="primitive implementation of fightingsystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="primitive implementation of fightingsystem" />
   </component>
 </project>

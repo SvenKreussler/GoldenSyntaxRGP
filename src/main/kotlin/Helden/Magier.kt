@@ -1,6 +1,12 @@
 package Helden
 
-class Magier: Held(name = "Faraji",
+class Magier: Held(name = """
+ _____                            _   _ 
+|  ___|   __ _   _ __    __ _    (_) (_)
+| |_     / _` | | '__|  / _` |   | | | |
+|  _|   | (_| | | |    | (_| |   | | | |
+|_|      \__,_| |_|     \__,_|  _/ | |_|
+                               |__/     """,
                     hp = 100,
                     alive = true,
                     zugGemacht = true,
@@ -20,16 +26,7 @@ class Magier: Held(name = "Faraji",
     }
 
     fun druckeAktionenAus() {
-        println("""
-                 _____                            _   _ 
-                |  ___|   __ _   _ __    __ _    (_) (_)
-                | |_     / _` | | '__|  / _` |   | | | |
-                |  _|   | (_| | | |    | (_| |   | | | |
-                |_|      \__,_| |_|     \__,_|  _/ | |_|
-                                               |__/     
-   
 
-        """.trimIndent())
         println("1) Heilen(Heilt alle aus Party mit 20)")
 /*        println("2) Immun(Ein Party-Mitglied ist für eine Runde immun")
         println("3) Feuerball(Ein Feuerball wird gewirkt 20 Schaden)")
