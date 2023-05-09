@@ -13,12 +13,12 @@ class Scherge(): Gegner(name = "Snaag",
 
 
     fun returnRandomAuswahl(){
-    var randomAuswahl = listOf(attacke(), krallen(), feuball(),gift())
+    var randomAuswahl = listOf(1,2,3,4)
         when (randomAuswahl.random()){
-            attacke() -> attacke()
-            krallen() -> krallen()
-            feuball() -> feuball()
-            gift() -> gift()
+            1 -> attacke()
+            2 -> krallen()
+            3 -> feuball()
+            4 -> gift()
         }
 
     }

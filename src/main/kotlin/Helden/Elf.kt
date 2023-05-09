@@ -10,9 +10,9 @@ class Elf: Held(name = "Paeris",
     fun returnAuswahl(anwenderwaehltAus:Int) {
         when (anwenderwaehltAus) {
             1 -> angriff()
-            2 -> feuermauer()
+/*            2 -> feuermauer()
             3 -> giftpfeil()
-            4 -> mut()
+            4 -> mut()*/
             else -> {
                 println("Auswahl ungültig!")
             }
