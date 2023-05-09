@@ -26,7 +26,7 @@ class Magier: Held(name = """
     }
 
     fun druckeAktionenAus() {
-
+        println(name)
         println("1) Heilen(Heilt alle aus Party mit 20)")
 /*        println("2) Immun(Ein Party-Mitglied ist für eine Runde immun")
         println("3) Feuerball(Ein Feuerball wird gewirkt 20 Schaden)")

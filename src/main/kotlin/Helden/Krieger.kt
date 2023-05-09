@@ -25,7 +25,7 @@ class Krieger: Held(name = """
 
 
     fun druckeAktionenAus() {
-
+        println(name)
         println("1) Angriff(Normaler Angriff mit 20 Schaden)")
         println("2) Raserei(Attacke mit 40 Schaden an Gegner und 20% Schaden an sich selbst)")
         println("3) Schuetzen(Schützt ein Party Mitglied für eine Runde und selbst nimmt zehn Schaden)")

@@ -33,6 +33,8 @@ fun main() {
         print(held)
     }*/
 
+    println(-20 < 0)
+
 }
 
 

@@ -27,7 +27,7 @@ class Elf: Held(name = """
     }
 
     fun druckeAktionenAus() {
-
+        println(name)
         println("1) Pfeilangriff(Normaler Angriff mit 20 Schaden)")
 /*        println("2) Feuermauer(heldenklasse bekommt -10 Schaden für eine Runde)")
         println("3) Giftpfeil(Zustandsveränderung für Gegner: -5 % Schaden Ausgabe für 4 Runden)")
