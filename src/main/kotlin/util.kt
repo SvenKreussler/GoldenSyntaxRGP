@@ -24,14 +24,14 @@ fun main() {
         }
     }*/
 
-    var elf = Elf()
+/*    var elf = Elf()
     var krieger = Krieger()
     var magier = Magier()
 
     var helden = mutableListOf(magier,krieger,elf)
     for (held in helden) {
         print(held)
-    }
+    }*/
 
 }
 
