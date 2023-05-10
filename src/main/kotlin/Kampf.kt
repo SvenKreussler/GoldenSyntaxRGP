@@ -4,12 +4,11 @@ import Helden.*
 /*
 //TODO:
    1) Prüfen, warum es noch eine Ausgabe gibt, wenn Drache null HP hat.
-   2) Prüfen, welche Forderungen nicht erfüllt sind.
-   3) Prüfen, wie man die Drachenfunktion zufällig aktivieren kann. Auch rausfinden, wie es möglich ist eine Funktion in einer while Schleife
+   2) Prüfen, wie man die Drachenfunktion zufällig aktivieren kann. Auch rausfinden, wie es möglich ist eine Funktion in einer while Schleife
    einer Liste einzufügen und die dann randomisiert aufzurufen, ohne die Funktion selbst aufzurufen.
-   4) Ein Daten Modell definieren, was eine Runde darstellt und darin dann Eigenschaften auf Helden und Gegner abbildet wie zum Beispiel vergiftet oder geheilt
-   5) Die Möglichkeit, den Beutel zu benutzen, einfügen
-   6) Möglichkeit, den Schergen vom Bus aufzurufen aktiviere
+   3) Ein Daten Modell definieren, was eine Runde darstellt und darin dann Eigenschaften auf Helden und Gegner abbildet wie zum Beispiel vergiftet oder geheilt
+   4) Die Möglichkeit, den Beutel zu benutzen, einfügen
+   5) Möglichkeit, den Schergen vom Boss aufzurufen aktivieren
 
 */
 
