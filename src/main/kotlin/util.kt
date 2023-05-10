@@ -49,10 +49,13 @@ fun main() {
         heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
     }
 
+
     fun schwanzflosse(): Int {
         return heldenHPMap.values.random() - drache.schwanzflosse()
 
     }
+    println(elf.heldenHPMap)
+
 
     var directatk = listOf(feuerAtmenDrache(),schwanzflosse())
 }

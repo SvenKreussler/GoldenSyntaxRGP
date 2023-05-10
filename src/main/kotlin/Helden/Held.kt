@@ -9,5 +9,9 @@ open class Held(var nameBig:String,
                 var vergifted: Boolean,
                 var anwenderwaehltAus:Int):Beutel(heiltrank = 3, phoenixfeder = 1){
 
+                    var heldenHPMap = mapOf<String,Int>(
+                        name to hp
+                    )
+
 }
 

@@ -1,7 +1,5 @@
 package Gegner
 
-
-
 class Drache:Gegner("""
   ____               _         _   _   _         
  / ___|   ___     __| |  ____ (_) | | | |   __ _ 
@@ -15,17 +13,6 @@ class Drache:Gegner("""
                     zugGemacht = true,
                     vergifted = false) {
 
-/*    fun returnRandomAuswahl(){
-        var randomAuswahl = listOf(1).random()
-        when (randomAuswahl){
-            1 -> schwanzflosse()
-            2 -> feueratem()
-            3 -> verfluchen()
-            4 -> beschwoeren()*//*
-            else -> println("ungültige Auswahl")
-        }
-
-    }*/
     open fun feueratem(): Int{
         // feuerangriff fügt 20 Schaden für Party zu
 
@@ -52,6 +39,3 @@ class Drache:Gegner("""
 
     }*/
 }
-
-//for (held in helden)
-//    for (atk in gegner)
