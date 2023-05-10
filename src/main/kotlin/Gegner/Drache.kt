@@ -1,7 +1,6 @@
 package Gegner
 
-val cyan = "\u001b[96m"
-val reset = "\u001b[0m"
+
 
 class Drache:Gegner("""
   ____               _         _   _   _         

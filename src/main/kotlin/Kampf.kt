@@ -1,6 +1,19 @@
 import Gegner.*
 import Helden.*
 
+/*
+//TODO:
+   1) Prüfen, warum es noch eine Ausgabe gibt, wenn Drache null HP hat.
+   2) Prüfen, welche Forderungen nicht erfüllt sind.
+   3) Prüfen, wie man die Drachenfunktion zufällig aktivieren kann. Auch rausfinden, wie es möglich ist eine Funktion in einer while Schleife
+   einer Liste einzufügen und die dann randomisiert aufzurufen, ohne die Funktion selbst aufzurufen.
+   4) Ein Daten Modell definieren, was eine Runde darstellt und darin dann Eigenschaften auf Helden und Gegner abbildet wie zum Beispiel vergiftet oder geheilt
+   5) Die Möglichkeit, den Beutel zu benutzen, einfügen
+   6) Möglichkeit, den Schergen vom Bus aufzurufen aktiviere
+
+*/
+
+
 fun main() {
 
     //https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
@@ -16,21 +29,17 @@ fun main() {
     var drache = Drache()
     var scherge = Scherge()
 
-/*    var helden = mutableListOf(magier, krieger, elf)
-    var gegners = mutableListOf(drache, scherge)*/
-
-     var heldenHPMap = mapOf<String,Int>(
-         magier.name to magier.hp,
-         krieger.name to krieger.hp,
-         elf.name to elf.hp
-     )
-    //TODO: statii implementieren(dh auch Runden einpflegen)!
-    while(drache.hp > 0) {
+    var heldenHPMap = mapOf<String, Int>(
+        magier.name to magier.hp,
+        krieger.name to krieger.hp,
+        elf.name to elf.hp
+    )
+    while (drache.hp > 0) {
         //Counterintuitiv, welchseln
         krieger.zugGemacht = true
         elf.zugGemacht = true
         magier.zugGemacht = true
-        while(krieger.zugGemacht && elf.zugGemacht && magier.zugGemacht) {
+        while (krieger.zugGemacht && elf.zugGemacht && magier.zugGemacht) {
             //Druckt die Aktionen aus, die die Klasse Krieger hat
             krieger.druckeAktionenAus()
             println("HP: $red ${heldenHPMap.get("Hroarr")} $reset")
@@ -49,7 +58,7 @@ fun main() {
             //Lies die Auswahl vom Anwender
             var ausWahlFuerElf = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
-            drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
+            drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerElf)
             if (drache.hp < 0)
                 break
             println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")
@@ -61,7 +70,7 @@ fun main() {
             //Lies die Auswahl vom Anwender
             var ausWahlFuerMagier = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
-            drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
+            drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerMagier)
             if (drache.hp < 0)
                 break
             println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")
@@ -77,25 +86,16 @@ fun main() {
 
                 fun schwanzflosse(): Int {
                     return heldenHPMap.values.random() - drache.schwanzflosse()
-
                 }
 
-                var directatk = listOf(feuerAtmenDrache(),schwanzflosse()).random()
-
-
-                /*var targethp = target.hp - directatk
-                println("${target.name}\n hat noch $red $targethp HP! $reset")*/
                 drache.zugGemacht = false
 
             }
         }
-        fun feuerAtmenDrache() {
-            heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
-        }
 
 
-    }
-    println(""" $red
+        println(
+            """ $red
   ____      _      __  __   _____    ___   __     __  _____   ____    _ 
  / ___|    / \    |  \/  | | ____|  / _ \  \ \   / / | ____| |  _ \  | |
 | |  _    / _ \   | |\/| | |  _|   | | | |  \ \ / /  |  _|   | |_) | | |
@@ -103,8 +103,10 @@ fun main() {
  \____| /_/   \_\ |_|  |_| |_____|  \___/     \_/    |_____| |_| \_\ (_)
                                                                         
 $reset
-""")
+"""
+        )
 
+    }
 }
 
 
