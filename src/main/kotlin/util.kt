@@ -25,6 +25,7 @@ fun main() {
     }*/
 
 
+
     var elf = Elf()
     var krieger = Krieger()
     var magier = Magier()
@@ -36,13 +37,14 @@ fun main() {
         krieger.name to krieger.hp,
         elf.name to elf.hp
     )
+    println(heldenHPMap.values.random())
+}
     /*for (held in heldenHPMap)
     {
 }*/
-    heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }  /*drache.feueratem()*/
-
-    println(heldenHPMap)
-}
+/*    heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }  *//*drache.feueratem()*//*
+    println(heldenHPMap.values)
+}*/
 
 
 

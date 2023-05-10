@@ -19,10 +19,10 @@ fun main() {
 /*    var helden = mutableListOf(magier, krieger, elf)
     var gegners = mutableListOf(drache, scherge)*/
 
-     var heldenHPMap = mutableMapOf<String,Int>(
-         magier.nameBig to magier.hp,
-         krieger.nameBig to krieger.hp,
-         elf.nameBig to elf.hp
+     var heldenHPMap = mapOf<String,Int>(
+         magier.name to magier.hp,
+         krieger.name to krieger.hp,
+         elf.name to elf.hp
      )
     //TODO: statii implementieren(dh auch Runden einpflegen)!
     while(drache.hp > 0) {
@@ -67,20 +67,36 @@ fun main() {
         if (drache.hp > 0) {
             drache.zugGemacht = true
             while (drache.zugGemacht) {
-                var target = heldenHPMap
-                /*var directatk = listOf(drache.feueratem(),drache.feueratem())*/
-/*                drache.feueratem(target.keys)
+                fun feuerAtmenDrache() {
+                heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
+                }
 
-                var targethp = target.hp - dmg
-                println("${target.name}\n hat noch $red $targethp HP! $reset")
-                drache.zugGemacht = false*/
+                fun schwanzflosse(): Int {
+                    return heldenHPMap.values.random() - drache.schwanzflosse()
+
+                }
+
+                var directatk = listOf(feuerAtmenDrache(),schwanzflosse()).random()
+
+
+                /*var targethp = target.hp - directatk
+                println("${target.name}\n hat noch $red $targethp HP! $reset")*/
+                drache.zugGemacht = false
 
             }
         }
 
 
     }
-    println("gewonnen!")
+    println(""" $red
+  ____      _      __  __   _____    ___   __     __  _____   ____    _ 
+ / ___|    / \    |  \/  | | ____|  / _ \  \ \   / / | ____| |  _ \  | |
+| |  _    / _ \   | |\/| | |  _|   | | | |  \ \ / /  |  _|   | |_) | | |
+| |_| |  / ___ \  | |  | | | |___  | |_| |   \ V /   | |___  |  _ <  |_|
+ \____| /_/   \_\ |_|  |_| |_____|  \___/     \_/    |_____| |_| \_\ (_)
+                                                                        
+$reset
+""")
 
 }
 

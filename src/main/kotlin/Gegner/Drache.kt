@@ -28,13 +28,10 @@ class Drache:Gegner("""
 
     }*/
     fun feueratem(): Int{
-        println("Feuerangriff: 20 Schaden für Party!")
-/*        for (i in 1..3) {
-            helden[i].hp - 20
-            i++
-        }*/
-        return 20
         // feuerangriff fügt 20 Schaden für Party zu
+        println("Feuerangriff: 20 Schaden für die ganze Party!")
+
+        return 20
 
     }
 
@@ -58,3 +55,6 @@ class Drache:Gegner("""
 
     }*/
 }
+
+//for (held in helden)
+//    for (atk in gegner)
