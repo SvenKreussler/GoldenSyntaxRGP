@@ -2,7 +2,15 @@ package Gegner
 
 
 // wird aufgerufen von Klasse Drache und kann nur einmal pro Kampf aufgerufen werden
-class Scherge(): Gegner(name = "Snaag",
+class Scherge(): Gegner(nameBig = """ 
+ ____                                  
+/ ___|   _ __     __ _    __ _    __ _ 
+\___ \  | '_ \   / _` |  / _` |  / _` |
+ ___) | | | | | | (_| | | (_| | | (_| |
+|____/  |_| |_|  \__,_|  \__,_|  \__, |
+                                 |___/ 
+""",
+                    name = "Snaag",
                     hp = 50,
                     alive = false,
                     zugGemacht = true,

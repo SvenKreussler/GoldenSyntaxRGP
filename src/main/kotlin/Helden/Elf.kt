@@ -1,6 +1,6 @@
 package Helden
 
-class Elf: Held(name = """
+class Elf: Held(nameBig = """
  ____                          _       
 |  _ \    __ _    ___   _ __  (_)  ___ 
 | |_) |  / _` |  / _ \ | '__| | | / __|
@@ -8,6 +8,7 @@ class Elf: Held(name = """
 |_|      \__,_|  \___| |_|    |_| |___/
                                        
 """,
+                name = "Paeris",
                 hp = 100,
                 alive = true,
                 vergifted = false,
@@ -27,7 +28,7 @@ class Elf: Held(name = """
     }
 
     fun druckeAktionenAus() {
-        println(name)
+        println(nameBig)
         println("1) Pfeilangriff(Normaler Angriff mit 20 Schaden)")
 /*        println("2) Feuermauer(heldenklasse bekommt -10 Schaden für eine Runde)")
         println("3) Giftpfeil(Zustandsveränderung für Gegner: -5 % Schaden Ausgabe für 4 Runden)")

@@ -3,6 +3,7 @@ import Helden.*
 
 fun main() {
 
+    //https://en.wikipedia.org/wiki/ANSI_escape_code#Colors
     val red = "\u001b[31m"
     val reset = "\u001b[0m"
     val cyan = "\u001b[96m"
@@ -15,9 +16,15 @@ fun main() {
     var drache = Drache()
     var scherge = Scherge()
 
-    var helden = mutableListOf(magier, krieger, elf)
-    var gegners = mutableListOf(drache, scherge)
+/*    var helden = mutableListOf(magier, krieger, elf)
+    var gegners = mutableListOf(drache, scherge)*/
 
+     var heldenHPMap = mutableMapOf<String,Int>(
+         magier.nameBig to magier.hp,
+         krieger.nameBig to krieger.hp,
+         elf.nameBig to elf.hp
+     )
+    //TODO: statii implementieren(dh auch Runden einpflegen)!
     while(drache.hp > 0) {
         //Counterintuitiv, welchseln
         krieger.zugGemacht = true
@@ -32,7 +39,7 @@ fun main() {
             drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
             if (drache.hp < 0)
                 break
-            println("$cyan ${drache.name} \n hat noch $red ${drache.hp} HP! $reset\n")
+            println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")
             krieger.zugGemacht = false
 
             //Druckt die Aktionen aus, die die Klasse Elf hat
@@ -43,7 +50,7 @@ fun main() {
             drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
             if (drache.hp < 0)
                 break
-            println("$cyan ${drache.name} \n hat noch $red ${drache.hp} HP! $reset\n")
+            println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")
             elf.zugGemacht = false
 
             //Druckt die Aktionen aus, die die Klasse magier hat
@@ -54,17 +61,19 @@ fun main() {
             drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerKrieger)
             if (drache.hp < 0)
                 break
-            println("$cyan ${drache.name} \n hat noch $red ${drache.hp} HP! $reset\n")
+            println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")
             magier.zugGemacht = false
         }
         if (drache.hp > 0) {
             drache.zugGemacht = true
             while (drache.zugGemacht) {
-                var target = listOf(krieger, magier, elf).random()
-                var dmg = drache.schwanzflosse()
+                var target = heldenHPMap
+                /*var directatk = listOf(drache.feueratem(),drache.feueratem())*/
+/*                drache.feueratem(target.keys)
+
                 var targethp = target.hp - dmg
-                println("${target.name}\n hat noch $targethp HP!")
-                drache.zugGemacht = false
+                println("${target.name}\n hat noch $red $targethp HP! $reset")
+                drache.zugGemacht = false*/
 
             }
         }
