@@ -33,6 +33,7 @@ fun main() {
         while(krieger.zugGemacht && elf.zugGemacht && magier.zugGemacht) {
             //Druckt die Aktionen aus, die die Klasse Krieger hat
             krieger.druckeAktionenAus()
+            println("HP: $red ${heldenHPMap.get("Hroarr")} $reset")
             //Lies die Auswahl vom Anwender
             var ausWahlFuerKrieger = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
@@ -44,6 +45,7 @@ fun main() {
 
             //Druckt die Aktionen aus, die die Klasse Elf hat
             elf.druckeAktionenAus()
+            println("HP: $red ${heldenHPMap.get("Paeris")} $reset")
             //Lies die Auswahl vom Anwender
             var ausWahlFuerElf = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
@@ -55,6 +57,7 @@ fun main() {
 
             //Druckt die Aktionen aus, die die Klasse magier hat
             magier.druckeAktionenAus()
+            println("HP: $red ${heldenHPMap.get("Hroarr")} $reset")
             //Lies die Auswahl vom Anwender
             var ausWahlFuerMagier = readln().toInt()
             //Gibt Schadenswert beziehungsweise Boolean wieder
@@ -68,7 +71,8 @@ fun main() {
             drache.zugGemacht = true
             while (drache.zugGemacht) {
                 fun feuerAtmenDrache() {
-                heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
+                    heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
+                    println("$cyan ${drache.nameBig}\n Feueratem: 20 Schaden alle Helden!$reset")
                 }
 
                 fun schwanzflosse(): Int {
@@ -84,6 +88,9 @@ fun main() {
                 drache.zugGemacht = false
 
             }
+        }
+        fun feuerAtmenDrache() {
+            heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
         }
 
 

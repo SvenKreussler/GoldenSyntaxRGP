@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Implementierung, der etwas ausgeweiteren Angriffsarten">
+    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="feueratem eingefügt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Gegner.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Gegner.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Krieger.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
     </list>
@@ -182,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683708375903</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feueratem eingefügt">
+      <created>1683720693188</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683720693188</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +227,7 @@
     <MESSAGE value="implemented fonts" />
     <MESSAGE value="color encoding fuer Drache" />
     <MESSAGE value="Implementierung, der etwas ausgeweiteren Angriffsarten" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementierung, der etwas ausgeweiteren Angriffsarten" />
+    <MESSAGE value="feueratem eingefügt" />
+    <option name="LAST_COMMIT_MESSAGE" value="feueratem eingefügt" />
   </component>
 </project>

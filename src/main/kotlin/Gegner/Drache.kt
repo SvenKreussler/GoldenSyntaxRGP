@@ -27,16 +27,14 @@ class Drache:Gegner("""
         }
 
     }*/
-    fun feueratem(): Int{
+    open fun feueratem(): Int{
         // feuerangriff fügt 20 Schaden für Party zu
-        println("Feuerangriff: 20 Schaden für die ganze Party!")
 
         return 20
-
     }
 
     fun schwanzflosse(): Int {
-        println("$cyan $nameBig\n Schwanzflosse: 20 Schaden für einen Helden!$reset")
+        /*println("$cyan $nameBig\n Schwanzflosse: 20 Schaden für einen Helden!$reset")*/
         //Fügt 20 Schaden für ein Helden hinzu
         return 20
     }

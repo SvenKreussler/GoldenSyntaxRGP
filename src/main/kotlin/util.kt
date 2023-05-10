@@ -32,12 +32,29 @@ fun main() {
 
     var drache = Drache()
 
+/*    var heldenHPMap = mapOf<String,Int>(
+        magier.name to magier.hp,
+        krieger.name to krieger.hp,
+        elf.name to elf.hp
+    )
+    println(heldenHPMap.values.random())*/
+
     var heldenHPMap = mapOf<String,Int>(
         magier.name to magier.hp,
         krieger.name to krieger.hp,
         elf.name to elf.hp
     )
-    println(heldenHPMap.values.random())
+
+    fun feuerAtmenDrache() {
+        heldenHPMap = heldenHPMap.mapValues { it.value - drache.feueratem() }
+    }
+
+    fun schwanzflosse(): Int {
+        return heldenHPMap.values.random() - drache.schwanzflosse()
+
+    }
+
+    var directatk = listOf(feuerAtmenDrache(),schwanzflosse())
 }
     /*for (held in heldenHPMap)
     {
