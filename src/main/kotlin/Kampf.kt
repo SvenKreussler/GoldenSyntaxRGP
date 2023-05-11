@@ -59,7 +59,7 @@ fun main() {
                 //Lies die Auswahl vom Anwender
                 var ausWahlFuerElf = readln().toInt()
                 //Gibt Schadenswert beziehungsweise Boolean wieder
-                drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerElf)
+                drache.hp -= elf.returnAuswahl(anwenderwaehltAus = ausWahlFuerElf)
                 if (drache.hp < 0)
                     break
                 println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")
@@ -71,7 +71,7 @@ fun main() {
                 //Lies die Auswahl vom Anwender
                 var ausWahlFuerMagier = readln().toInt()
                 //Gibt Schadenswert beziehungsweise Boolean wieder
-                drache.hp -= krieger.returnAuswahl(anwenderwaehltAus = ausWahlFuerMagier)
+                drache.hp -= magier.returnAuswahl(anwenderwaehltAus = ausWahlFuerMagier)
                 if (drache.hp <= 0)
                     break
                 println("$cyan ${drache.nameBig} \n hat noch $red ${drache.hp} HP! $reset\n")

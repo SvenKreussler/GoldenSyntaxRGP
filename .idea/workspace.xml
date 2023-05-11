@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Typos">
+    <list default="true" id="f361c8f9-6867-4984-859c-dc18ef5c6d0c" name="Changes" comment="Primitive incomplete GS-RGP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Gegner/Drache.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Held.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Elf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Helden/Magier.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Kampf.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Cherry-picking in main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/svenarbeit/Arbeit/Syntax/Grundlagen Programmieren/GoldenSyntax",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
@@ -211,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683727765135</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Primitive incomplete GS-RGP">
+      <created>1683803300646</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1683803300646</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +254,8 @@
     <MESSAGE value="primitive milestone" />
     <MESSAGE value="TODO created" />
     <MESSAGE value="Typos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Typos" />
+    <MESSAGE value="Primitive incomplete GS-RGP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primitive incomplete GS-RGP" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

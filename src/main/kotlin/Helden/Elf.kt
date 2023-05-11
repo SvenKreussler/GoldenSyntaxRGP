@@ -15,17 +15,17 @@ class Elf: Held(nameBig = """
                 zugGemacht = true,
                 anwenderwaehltAus = 0) {
 
-    fun returnAuswahl(anwenderwaehltAus:Int) {
-        when (anwenderwaehltAus) {
+    fun returnAuswahl(anwenderwaehltAus: Int): Int {
+        return when (anwenderwaehltAus) {
             1 -> angriff()
-/*            2 -> feuermauer()
+            /*2 -> feuermauer()
             3 -> giftpfeil()
             4 -> mut()*/
-            else -> {
-                println("Auswahl ungültig!")
-            }
+            else -> 0
         }
     }
+
+
 
     fun druckeAktionenAus() {
         println(nameBig)

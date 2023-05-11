@@ -14,22 +14,20 @@ class Magier: Held(nameBig = """
                     vergifted = false,
                     anwenderwaehltAus = 0) {
 
-    fun returnAuswahl(anwenderwaehltAus:Int) {
-        when (anwenderwaehltAus) {
+    fun returnAuswahl(anwenderwaehltAus:Int): Int{
+        return when (anwenderwaehltAus) {
             1 -> feuerball()
 /*          2 -> heilen()
             3 -> immun()
             4 -> engel()*/
-            else -> {
-                println("Auswahl ungültig!")
-            }
+            else -> 0
         }
     }
 
     fun druckeAktionenAus() {
         println(nameBig)
-        println("1) Heilen(Heilt alle aus Party mit 20)")
-/*        println("2) Immun(Ein Party-Mitglied ist für eine Runde immun")
+        println("1) Feuerball(Ein Feuerball wird gewirkt 20 Schaden)")
+/*      println("2) Immun(Ein Party-Mitglied ist für eine Runde immun")
         println("3) Feuerball(Ein Feuerball wird gewirkt 20 Schaden)")
         println("4) Engel(Belebt einen mithelden mit 20 hp)")*/
     }
